@@ -1,0 +1,13 @@
+[run]
+# Указываем, какие файлы игнорировать (путь относительный или с *)
+omit =
+    table.py
+    normal_forms.py
+    rpn_converter.py
+    expression_validator.py
+
+
+[report]
+# Отчет будет показывать пропущенные строки (опционально)
+#show_missing = True
+#skip_covered = True
