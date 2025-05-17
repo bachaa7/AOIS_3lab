@@ -83,11 +83,11 @@ def main():
 
         # Теперь для СКНФ
         # print("\n============================================ СКНФ ============================================")
-        # karnaugh_minimizer = KarnaughMinimizer(expression_k)  # Используем СКНФ
-        # karnaugh_minimizer.generate_simplified_table()
-        # karnaugh_minimizer.display_simplified_table()
+        karnaugh_minimizer = KarnaughMinimizer(expression_k)  # Используем СКНФ
+        karnaugh_minimizer.generate_simplified_table()
+        karnaugh_minimizer.display_simplified_table()
         karnaugh_minimizer.display_karnaugh_map()
-        # minimized_sknf = karnaugh_minimizer.minimize_sknf()
+        minimized_sknf = karnaugh_minimizer.minimize_sknf()
         print("\n")
         # Вызов метода минимизации без промежуточных выводов
         min_k2 = Minimizing.minimize_sknf_second_simplified(result_k, variables)
